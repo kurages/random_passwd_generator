@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>random_passwd_generator</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/vue.js"></script>
+		<script src="js/app.js"></script>
+	</head>
+	<body>
+		<h3>パスワードジェネレーター</h3>
+		<div id="app">
+			桁数を入力:<input v-model.number="length" type="number"><br>
+			<div class="center">
+				<button v-on:click="generate">生成！</button>
+			</div><br><br>
+			passwd:{{result}}
+		</div>
+	</body>
+</html>
+
+
